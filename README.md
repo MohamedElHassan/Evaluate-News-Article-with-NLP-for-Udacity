@@ -1,12 +1,24 @@
 # Evaluate news article project
 
-# How to run The project,
+Here's the instructions to run the project
 
-## first you have to make `npm install` to install all the dependencies the project needs.
 
-## Second you have to start the server by typing `npm start` or `npm run start` to access the API and other stuff.
+### `npm install`
 
-## Third you have to generate the bundle files by typing `npm run build-dev` for Development mode or type `npm run build-prod` for Production mode version.
+
+To Install all the required packages for the project
+
+
+### `npm start`
+
+
+to access the API and other stuff.
+
+
+### `npm run build-prod`
+
+To create the dist files and Production files
+
 
 Note : The version of the webpack used in this Project
 
@@ -17,7 +29,7 @@ Note : The version of the webpack used in this Project
 ----------------------------------
 
 
-# Benefits of the NLP Project
+## Benefits of the NLP Project
 
 ### You have a input form to add your URL, you will have an alert if it's not a URL.
 
