@@ -1,10 +1,9 @@
 
-const key = 'b6068f63e25943e5402d12a91628f130'
+// const key = 'b6068f63e25943e5402d12a91628f130'
 const dotenv = require('dotenv');
 dotenv.config();
 var path = require('path')
 const express = require('express')
-
 const app = express()
 const fetch = require('node-fetch')
 
@@ -35,7 +34,11 @@ app.post('/add-url', async function (req, res) {
     let responseObj = await fetch(`https://api.meaningcloud.com/sentiment-2.1?key=${process.env.API_KEY}&url=${url}&lang=en`, { method: "POST" })
 
     let data = await responseObj.json()
-    if (data && data.status.code == 0)
+    if (data && data.status.code == 0){
         res.send(data)
+        res.sendStatus(200)
+    }
     else res.status(500).send({ message: "Server Error" })
 })
+
+module.exports = app

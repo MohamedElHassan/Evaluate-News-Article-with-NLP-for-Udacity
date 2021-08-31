@@ -5,4 +5,7 @@ function validateUrl(value)
     return regexp.test(value);
 }
 
-export { validateUrl }
+// export { validateUrl }
+
+module.exports = validateUrl;
+
