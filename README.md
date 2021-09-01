@@ -10,9 +10,11 @@
 
 Note : The version of the webpack used in this Project
 
-    "webpack": "^4.35.3",
+    "webpack": "^4.40.2"
 
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^3.3.9"
+
+    "webpack-dev-server": "^3.8.1"
 
 ----------------------------------
 
